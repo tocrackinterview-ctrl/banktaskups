@@ -1,0 +1,205 @@
+.loan-form-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 2px solid #003366;
+  border-radius: 8px;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+ 
+.form-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+ 
+.form-description {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+ 
+.form-section {
+  margin-bottom: 2rem;
+}
+ 
+.form-section h3 {
+  font-size: 1.1rem;
+  color: #003366;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #003366;
+  padding-bottom: 0.5rem;
+}
+ 
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+ 
+.form-group {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.full-width {
+  flex: 1 1 100%;
+}
+ 
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+ 
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+ 
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+ 
+.radio-group label {
+  font-weight: normal;
+}
+ 
+.submit-btn {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.75rem 2rem;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+ 
+.submit-btn:hover {
+  background-color: #0055aa;
+}
+ 
+input[name="residentialAddress"] {
+  min-width: 400px;
+  height: 4rem;
+}
+ 
+.loan-form-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 2px solid #003366;
+  border-radius: 8px;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+ 
+.form-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+ 
+.form-description {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+ 
+.form-section {
+  margin-bottom: 2rem;
+}
+ 
+.form-section h3 {
+  font-size: 1.1rem;
+  color: #003366;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #003366;
+  padding-bottom: 0.5rem;
+}
+ 
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+ 
+.form-group {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.full-width {
+  flex: 1 1 100%;
+}
+ 
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+ 
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+ 
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+ 
+.radio-group label {
+  font-weight: normal;
+}
+ 
+.submit-btn {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.75rem 2rem;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+ 
+.submit-btn:hover {
+  background-color: #0055aa;
+}
+ 
+input[name="residentialAddress"] {
+  min-width: 400px;
+  height: 4rem;
+}

@@ -1,0 +1,291 @@
+/* --- Global Styles & Layout --- */
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    color: #34495e;
+    margin: 0;
+    padding: 0;
+}
+
+.repayment-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Alerts & Banners --- */
+.alert-banner {
+    background-color: #fde6e6; /* Softer red */
+    color: #c0392b; /* Darker red text */
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #e74c3c;
+    animation: fadeInDown 0.5s ease-out;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Loan Summary Card --- */
+.loan-summary {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 450px;
+    border-left: 5px solid #3498db;
+    transition: transform 0.3s ease;
+}
+
+.loan-summary:hover {
+    transform: translateY(-5px);
+}
+
+.badge {
+    display: inline-block;
+    background-color: #e8f5e9;
+    color: #388e3c;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.loan-summary h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.details p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.details p strong {
+    color: #34495e;
+}
+
+/* --- Payment History Table --- */
+.payment-history {
+    width: 100%;
+    max-width: 900px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+}
+
+.payment-history h4 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 0.75rem;
+}
+
+.payment-history table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.payment-history thead th {
+    background-color: #f8f9fa;
+    color: #7f8c8d;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.payment-history th, .payment-history td {
+    padding: 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.payment-history tbody tr:hover {
+    background-color: #fdfdfd;
+}
+
+/* --- Status Badges --- */
+.status {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: capitalize;
+}
+
+.status.paid {
+    background-color: #e8f5e9;
+    color: #388e3c;
+}
+
+.status.pending {
+    background-color: #fff3e0;
+    color: #f57c00;
+}
+
+.status.overdue, .status.missed {
+    background-color: #ffebee;
+    color: #c0392b;
+}
+
+.status.rejected {
+    background-color: #ffebee;
+    color: #c0392b;
+}
+
+.status.accepted {
+    background-color: #e8f5e9;
+    color: #388e3c;
+}
+
+/* --- Status Messages --- */
+.status-message {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.status-message.pending {
+    background-color: #fff3e0;
+    border-left: 4px solid #f57c00;
+}
+
+.status-message.accepted {
+    background-color: #e8f5e9;
+    border-left: 4px solid #388e3c;
+}
+
+.status-message.rejected {
+    background-color: #ffebee;
+    border-left: 4px solid #c0392b;
+}
+
+.status-message h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.status-message p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* --- Repayment Summary --- */
+.repayment-summary {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.repayment-summary p {
+    margin: 0;
+    font-weight: 600;
+}
+
+/* --- Payment Status Text --- */
+.paid-text {
+    color: #388e3c;
+    font-weight: 600;
+}
+
+.upcoming-text {
+    color: #757575;
+    font-style: italic;
+}
+
+.payment-info {
+    color: #f57c00;
+    font-size: 0.85rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .repayment-summary {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* --- Action Button --- */
+.primary1 {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.primary1:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    font-size: 0.9rem;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    .loan-summary, .payment-history {
+        padding: 1.5rem;
+        border-radius: 12px;
+    }
+
+    .loan-summary {
+        max-width: 100%;
+    }
+
+    .payment-history table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .payment-history th, .payment-history td {
+        padding: 0.8rem;
+    }
+}

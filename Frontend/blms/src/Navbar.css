@@ -1,0 +1,215 @@
+/* Navbar Specific Styles */
+.navbar {
+  background-color: #002244;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo1 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  position: relative;
+  left:14rem;
+}
+
+.nav-links li a:hover {
+  color: #00bfff;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navbtn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.6rem 1.5rem; /* Slightly larger buttons */
+  border: none;
+  border-radius: 50px; /* Pill shape */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.navbtn.secondary {
+  background-color: transparent;
+  border: 1px solid white;
+
+}
+
+.nav-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.nav-btn:hover {
+  background-color: #0056b3;
+}
+
+.profile-logo {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+}
+
+.profile-logo:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  color: #333;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  min-width: 250px;
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-dropdown p {
+  margin: 0 0 8px 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.profile-dropdown p:last-of-type {
+  border-bottom: none;
+  margin-bottom: 15px;
+}
+
+.profile-dropdown strong {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.profile-dropdown .nav-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 3px 6px 0 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+}
+
+.profile-dropdown .nav-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+  background: linear-gradient(135deg, #0056b3, #004085);
+}
+
+/* Profile Edit Mode Styles */
+.profile-dropdown input {
+  width: 60px;
+  padding: 3px 4px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 11px;
+  margin-left: 6px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.p-edit{
+  width: 50px;
+}
+.profile-dropdown input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+.profile-dropdown input[type="email"] {
+  width: 55px;
+}
+
+.profile-dropdown input[type="text"] {
+  width: 55px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+  .nav-actions {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+  }
+  .profile-dropdown {
+    right: auto;
+    left: 0;
+  }
+}

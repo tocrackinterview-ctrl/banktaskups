@@ -1,0 +1,89 @@
+.error-message {
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 0.05rem;
+}
+ 
+.error-message-e{
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  margin-left:11.5rem;
+}
+.password-validation {
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  width: 100%;
+  margin-left: 10rem;
+
+}
+ 
+.validation-item {
+  color: #dc3545;
+  margin: 0.2rem 0;
+}
+ 
+.validation-item.valid {
+  color: #28a745;
+}
+ 
+.validation-item::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.5em;
+}
+ 
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+ 
+input[type="text"],
+input[type="email"],
+
+input[type="tel"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="email"]{
+  margin-bottom: 0;
+}
+
+input[type="password"]{
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  
+}
+ 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+ 
+input.error,
+select.error {
+  border-color: #dc3545;
+}
+ 
+.form-row {
+  margin-bottom: 0.5rem;
+}
+ 
